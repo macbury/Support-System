@@ -1,6 +1,8 @@
 Support System.
 -------------------------------------------------------------------------------
 
+DEMO: http://empty-galaxy-773.heroku.com/
+
 Basic proof of concept style Rails 3.1 application for tracking issues. So far I have made the basic framework and added styles taken from Bootstrap (http://twitter.github.com/bootstrap/).
 
 Should be as simple as:
