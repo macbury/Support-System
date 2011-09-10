@@ -24,6 +24,11 @@
  <label>Assign issue to:</label>
  <div class="input"><%= f.text_field :assigned %></div>
  </div>
+
+<div class="clearfix">
+ <label>Status</label>
+ <div class="input"><%= f.select :status, options_for_select(["Select One", "Open", "Ongoing", "Closed", "Outsourced"],:disabled => ["Select One"]) %></div>
+ </div>
 </fieldset>
 
 <fieldset>

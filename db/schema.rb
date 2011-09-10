@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20110910130514) do
     t.string   "assigned"
     t.string   "commit"
     t.string   "url"
+    t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

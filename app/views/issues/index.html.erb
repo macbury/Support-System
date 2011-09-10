@@ -18,9 +18,9 @@
 <table class="zebra-striped">
   <tr>
     <th>Name</th>
-    <th>Description</th>
     <th>Priority</th>
     <th>Assigned</th>
+    <th>Status</th>
     <th></th>
     <th></th>
   </tr>
@@ -28,9 +28,9 @@
 <% @issues.each do |issue| %>
   <tr class="<%= issue.priority %>">
     <td><%= issue.name %></td>
-    <td><%= issue.description %></td>
     <td><%= issue.priority %></td>
     <td><%= issue.assigned %></td>
+    <td><%= issue.status %></td>
     <td><%= link_to 'Show', issue, :class => 'btn' %>
     <%= link_to 'Edit', edit_issue_path(issue), :class => 'btn' %></td>
     <td><%= link_to 'Destroy', issue, :confirm => 'Are you sure?', :method => :delete, :class => 'btn danger' %></td>

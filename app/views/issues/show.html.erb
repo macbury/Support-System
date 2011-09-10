@@ -17,12 +17,13 @@
 
 <div class="row">
     <div class="span4 columns">
-      <h2>Issue #<%= @issue.id %></h2>
+      <h2>Issue #<%= @issue.id %> <small><%= @issue.status %></small></h2>
 	  <div class="priority <%= @issue.priority %>">Priority is <%= @issue.priority %></div>
     </div>
 
 	<div class="span12 columns">
 	      <h4>Issue details.</h4>
+		  <%= @issue.status %>
 		  <%= @issue.priority %>
 		  <%= @issue.description %>
 		  <%= @issue.commit %>
