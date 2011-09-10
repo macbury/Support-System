@@ -5,6 +5,8 @@ class CreateIssues < ActiveRecord::Migration
       t.string :description
       t.string :priority
       t.string :assigned
+      t.string :commit
+      t.string :url
 
       t.timestamps
     end

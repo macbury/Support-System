@@ -17,6 +17,8 @@ ActiveRecord::Schema.define(:version => 20110910130514) do
     t.string   "description"
     t.string   "priority"
     t.string   "assigned"
+    t.string   "commit"
+    t.string   "url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
