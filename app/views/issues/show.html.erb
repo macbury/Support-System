@@ -12,13 +12,12 @@
 <% end %>
 
 <div class="page-header">
-  <h1><%= @issue.name %> <small>was assigned to <strong><%= @issue.assigned %></strong> on <strong>date</strong>.</small></h1>
+  <h1><%= @issue.name %> <small>assigned to <strong><%= @issue.assigned %></strong> on <strong><%= l @issue.created_at, :format => :short %></strong>.</small></h1>
 </div>
 
 <div class="row">
     <div class="span4 columns">
-      <h2>#<%= @issue.id %></h2>
-	  <p>Created on <%= @issue.created_at %></p>
+      <h2>Issue #<%= @issue.id %></h2>
     </div>
 
 	<div class="span12 columns">
