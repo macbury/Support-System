@@ -26,7 +26,7 @@
   </tr>
 
 <% @issues.each do |issue| %>
-  <tr>
+  <tr class="<%= issue.priority %>">
     <td><%= issue.name %></td>
     <td><%= issue.description %></td>
     <td><%= issue.priority %></td>

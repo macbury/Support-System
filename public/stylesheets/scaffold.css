@@ -56,3 +56,10 @@ div.field, div.actions {
 }
 
 div.content	  {width: 940px; margin: 50px auto}
+
+div.priority {margin-top: 5px; padding: 5px; border-top: 1px solid gray; border-bottom: 1px solid gray; font-weight: bold;}
+.High, .Emergency {color: red;}
+.Medium, .Low {color: green;}
+
+tr.Low, tr.Medium, tr.High, tr.Emergency {color: black;}
+tr.High, tr.Emergency {color: red;}
