@@ -45,10 +45,10 @@
 </div>
 
 </fieldset>
+<div class="actions">
+  <%= f.submit 'Submit', :class => 'btn primary' %>
+	<%= link_to 'Back', issues_path, :class => 'btn' %>
+</div>
 </div>
 
-  <div class="actions">
-    <%= f.submit 'Submit', :class => 'btn primary' %>
-	<%= link_to 'Back', issues_path, :class => 'btn' %>
-  </div>
 <% end %>
