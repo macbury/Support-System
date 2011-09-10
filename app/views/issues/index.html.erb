@@ -1,0 +1,37 @@
+<div class="page-header">
+  <h1>Issues</h1>
+</div>
+
+<% if flash[:alert] %>
+    <p class="flash-error"><%= flash[:alert] %></p>
+  <% end %>
+  <% if flash[:notice] %>
+    <p class="flash-notice"><%= flash[:notice] %></p>
+<% end %>
+
+<table class="zebra-striped">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Priority</th>
+    <th>Assigned</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @issues.each do |issue| %>
+  <tr>
+    <td><%= issue.name %></td>
+    <td><%= issue.description %></td>
+    <td><%= issue.priority %></td>
+    <td><%= issue.assigned %></td>
+    <td><%= link_to 'Show', issue, :class => 'btn' %>
+    <%= link_to 'Edit', edit_issue_path(issue), :class => 'btn' %></td>
+    <td><%= link_to 'Destroy', issue, :confirm => 'Are you sure?', :method => :delete, :class => 'btn danger' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Issue', new_issue_path, :class => "btn primary" %>

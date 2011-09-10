@@ -1,0 +1,10 @@
+Support System.
+-------------------------------------------------------------------------------
+
+Basic proof of concept style Rails 3.1 application for tracking issues. So far I have made the basic framework and added styles taken from Bootstrap (http://twitter.github.com/bootstrap/).
+
+Should be as simple as:
+
+1. git clone
+2. bundle install && rake db:migrate
+3. rails s
