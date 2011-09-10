@@ -1,5 +1,5 @@
 <div class="page-header">
-  <h1>Issues <small>Viewing the details of <strong><%= @issue.name %></strong>.</small></h1>
+  <h1><%= @issue.name %> <small>was assigned to <strong><%= @issue.assigned %></strong> on <strong>date</strong>.</small></h1>
 </div>
 
 <% if flash[:alert] %>
@@ -9,25 +9,20 @@
     <p class="flash-notice"><%= flash[:notice] %></p>
 <% end %>
 
-<p>
-  <b>Name:</b>
-  <%= @issue.name %>
-</p>
+<div class="row">
+    <div class="span4 columns">
+      <h2><%= @issue.priority %></h2>
+    </div>
 
-<p>
-  <b>Description:</b>
-  <%= @issue.description %>
-</p>
+	<div class="span12 columns">
+	      <h4>Issue details.</h4>
+		  <%= @issue.description %>
+		  
+    </div>
+  </div><!-- /row -->
 
-<p>
-  <b>Priority:</b>
-  <%= @issue.priority %>
-</p>
 
-<p>
-  <b>Assigned:</b>
-  <%= @issue.assigned %>
-</p>
+  
 
 
 <%= link_to 'Edit', edit_issue_path(@issue), :class => 'btn info' %>
