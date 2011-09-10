@@ -3,10 +3,16 @@
 </div>
 
 <% if flash[:alert] %>
-    <p class="flash-error"><%= flash[:alert] %></p>
-  <% end %>
-  <% if flash[:notice] %>
-    <p class="flash-notice"><%= flash[:notice] %></p>
+	<div class="span12 columns">
+      <div class="alert-message warning">
+        <p><%= flash[:alert] %></p>
+     </div>
+	<% end %>
+	<% if flash[:notice] %>
+	<div class="span12 columns">
+      <div class="alert-message success">
+        <p><%= flash[:notice] %></p>
+     </div>
 <% end %>
 
 <table class="zebra-striped">
