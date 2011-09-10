@@ -15,6 +15,14 @@
      </div>
 <% end %>
 
+<% if @issues.empty? %>
+
+<h2>Wow, you'll never be part of <a href="http://www.youtube.com/watch?v=ylJ7eNrvrug&ob=av3n">The Saturdays</a>. You've got no issues!</h2>
+<br />
+<%= link_to 'Add your first issue', new_issue_path, :class => "btn primary" %>
+
+<% else %>
+
 <table class="zebra-striped">
   <tr>
     <th>Name</th>
@@ -31,9 +39,10 @@
     <td><%= issue.priority %></td>
     <td><%= issue.assigned %></td>
     <td><%= issue.status %></td>
+	<td></td>
     <td><%= link_to 'Show', issue, :class => 'btn' %>
-    <%= link_to 'Edit', edit_issue_path(issue), :class => 'btn' %></td>
-    <td><%= link_to 'Destroy', issue, :confirm => 'Are you sure?', :method => :delete, :class => 'btn danger' %></td>
+    <%= link_to 'Edit', edit_issue_path(issue), :class => 'btn' %>
+    <%= link_to 'Destroy', issue, :confirm => 'Are you sure?', :method => :delete, :class => 'btn danger' %></td>
   </tr>
 <% end %>
 </table>
@@ -41,3 +50,4 @@
 <br />
 
 <%= link_to 'New Issue', new_issue_path, :class => "btn primary" %>
+<% end %>
