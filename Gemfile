@@ -34,3 +34,4 @@ gem 'sqlite3'
 # end
 gem "devise", "1.3.4"
 gem "rails-footnotes", ">= 3.7", :group => :development
+gem 'kaminari'

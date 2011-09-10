@@ -47,6 +47,8 @@
 <% end %>
 </table>
 
+<%= paginate @issues %>
+
 <br />
 
 <%= link_to 'New Issue', new_issue_path, :class => "btn primary" %>
