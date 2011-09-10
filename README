@@ -5,6 +5,6 @@ Basic proof of concept style Rails 3.1 application for tracking issues. So far I
 
 Should be as simple as:
 
-1. git clone
+1. git clone git://github.com/dannymcc/Support-System.git
 2. bundle install && rake db:migrate
 3. rails s
