@@ -58,3 +58,5 @@ div.field, div.actions {
 div.content	  {width: 940px; margin: 50px auto}
 
 div.priority {margin-top: 5px; padding: 5px; border-top: 1px solid gray; border-bottom: 1px solid gray; font-weight: bold;}
+.Open, .Closed, .Ongoing, .Outsourced {background-color: green; padding: 5px; color: white; -moz-border-radius: 5px; text-transform: uppercase; font-weight: bold; font-size: small; float: right; margin-top: 8px;}
+.Closed {background-color: red;}
