@@ -38,7 +38,7 @@
     <td><%= issue.name %></td>
     <td><%= issue.priority %></td>
     <td><%= issue.assigned %></td>
-    <td><%= issue.status %></td>
+    <td><span class="<%= issue.status %>"><%= issue.status %></span></td>
 	<td></td>
     <td><%= link_to 'Show', issue, :class => 'btn' %>
     <%= link_to 'Edit', edit_issue_path(issue), :class => 'btn' %>
