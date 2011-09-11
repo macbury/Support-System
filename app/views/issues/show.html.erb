@@ -22,16 +22,18 @@
     </div>
 
 	<div class="span12 columns">
-	      <h4>Issue details.</h4>
+	      <h4>Issue</h4>
 		  <%= @issue.status %>
 		  <%= @issue.priority %>
-		  <%= @issue.description %>
 		  <%= @issue.commit %>
 		  <%= @issue.url %>
 		  <%= @issue.created_at %>
 		  <%= @issue.updated_at %>
-		  
     </div>
+	<div class="span12 columns issue-description">
+	      <h4>Description of Issue</h4>
+		  <%= @issue.description %>
+	</div>
   </div><!-- /row -->
 
 
