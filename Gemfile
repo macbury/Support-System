@@ -11,7 +11,7 @@ gem "nifty-generators", :group => :development
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'therubyracer'
 # Use unicorn as the web server
 # gem 'unicorn'
 
